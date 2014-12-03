@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=use
+comment0.target=ActionManager(Level)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ActionManager\r\n
+comment1.params=e
+comment1.target=void\ reaction(java.awt.event.KeyEvent)
+comment2.params=e\ thing
+comment2.target=boolean\ moveWithObject(java.awt.event.KeyEvent,\ PhysicalObject)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment3.params=e
+comment3.target=boolean\ moveCursor(java.awt.event.KeyEvent)
+comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment4.params=e
+comment4.target=boolean\ moveCursorMove(java.awt.event.KeyEvent)
+comment4.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment5.params=e
+comment5.target=boolean\ moveCursorAction(java.awt.event.KeyEvent)
+comment5.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment6.params=range\ beginX\ beginY\ p
+comment6.target=void\ getMovement(int,\ int,\ int,\ java.lang.String)
+comment7.params=range\ beginX\ beginY\ p
+comment7.target=void\ getActionRange(int,\ int,\ int,\ java.lang.String)
+comment8.params=x\ y
+comment8.target=boolean\ inMovement(int,\ int)
+comment9.params=x\ y
+comment9.target=boolean\ inMoveThrough(int,\ int)
+numComments=10

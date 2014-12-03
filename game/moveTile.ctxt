@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=x\ y\ path
+comment0.target=moveTile(int,\ int,\ java.lang.String)
+comment1.params=x\ y
+comment1.target=boolean\ same(int,\ int)
+numComments=2

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=act\ move\ levelLim
+comment0.target=Job(Action[],\ int[],\ int[])
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Job\r\n
+comment1.params=
+comment1.target=Job()
+comment2.params=act\ move\ levelLim
+comment2.target=Job\ tamer(Action[],\ int[],\ int[])
+comment3.params=y
+comment3.target=int\ sampleMethod(int)
+comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+numComments=4

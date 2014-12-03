@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Game()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Game\r\n\ creates\ an\ instance\ of\ KeyListener\r\n
+comment1.params=e
+comment1.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment2.params=e
+comment2.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment3.params=e
+comment3.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=\r\n\ \ Main\ class\ for\ game.\ may\ move\ to\ seperate\ class\ later\ \r\n
+comment5.params=g
+comment5.target=void\ paint(java.awt.Graphics)
+comment5.text=\r\n\ paint\ method\ for\ class\r\n\ \r\n\ @param\ \ g\ Graphics\r\n
+comment6.params=g\ graphics\ toUse
+comment6.target=void\ paintGrid(java.awt.Graphics,\ java.awt.Graphics2D,\ Level)
+comment6.text=\r\n\ This\ method\ paints\ the\ grid\ using\ the\ Level\ class\ and\ it's\ contents.\ also\ uses\ information\ from\ local\ instance\ of\ ActionManager\ Class\ \r\n\ \r\n\ @param\ \ g\ Graphics\r\n\ @param\ \ graphics\ Graphics2D\r\n\ @param\ \ toUse\ Level\r\n
+comment7.params=g\ graphics\ toUse
+comment7.target=void\ drawMenus(java.awt.Graphics,\ java.awt.Graphics2D,\ Level)
+comment7.text=\r\n\ This\ method\ paints\ the\ menus\ using\ the\ Level\ class\ and\ it's\ contents.\ It\ also\ uses\ cues\ from\ ActionManagerClass\r\n\ \r\n\ @param\ \ g\ Graphics\r\n\ @param\ \ graphics\ Graphics2D\r\n\ @param\ \ toUse\ Level\r\n
+numComments=8

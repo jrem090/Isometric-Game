@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=PhysicalObject()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ PhysicalObject\r\n
+comment1.params=x\ y
+comment1.target=void\ setGrid(int,\ int)
+comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment2.params=
+comment2.target=int\ getX()
+comment3.params=
+comment3.target=int\ getY()
+numComments=4

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Tile()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Tile\r\n
+comment1.params=h\ occupied\ top1\ base1
+comment1.target=Tile(int,\ boolean,\ java.awt.Color,\ java.awt.Color)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Tile\r\n
+numComments=2
