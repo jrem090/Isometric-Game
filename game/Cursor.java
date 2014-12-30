@@ -1,13 +1,13 @@
 
 /**
- * Write a description of class Cursor here.
+ * Method to hold cursor information
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (John Remmes) 
+ * @version (0.1)
  */
 public class Cursor
 {
-    // instance variables - replace the example below with your own
+    // instance variables 
     private int x;
     private int y;
     /**
@@ -31,10 +31,10 @@ public class Cursor
     }
     
     /**
-     * An example of a method - replace this comment with your own
+     * Helper method that sets values of cursor
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * @param  i set x value
+     * @param  j set y value
      */
     public void set( int i, int j)
     {
@@ -42,10 +42,19 @@ public class Cursor
         y = j;
     }
     
+    /**
+     * Helper method that returns X value
+     * @return x-coordinate of cursor
+     */
     public int getX()
     {
         return x;
     }
+    
+    /**
+     * Helper method that returns Y value
+     * @return y-coordinate of cursor
+     */
     public int getY()
     {
         return y;

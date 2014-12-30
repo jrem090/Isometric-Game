@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Action here.
+ * This is a class designed to represent an Action done by a character
  * 
  * @author (John Remmes) 
- * @version (1.1)
+ * @version (0.1)
  */
 public class Action
 {
@@ -29,11 +29,13 @@ public class Action
         range = rangeAtk;
         aoeSize = area;
     }
-
+    /**
+     * Constructor for objects of class Action
+     */
     public Action()
     {}
     /**
-     * Constructor for objects of class Action
+     * Constructor for objects of class Action, using only id. used for testing basic actions
      */
     public Action(String id)
     {
@@ -42,16 +44,5 @@ public class Action
         //type = 1;
         range=1;
     }
-    
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return 2;
-    }
+   
 }

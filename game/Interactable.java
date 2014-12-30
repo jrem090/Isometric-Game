@@ -1,14 +1,15 @@
 
 /**
- * Write a description of class Character here.
+ * Interactable is an extension of the PhysicalObject Class
+ * This is reserved for non character interactable objects
+ * i.e. crates, bombs, chests, etc
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (John Remmes) 
+ * @version (0.1)
  */
 public class Interactable extends PhysicalObject
 {
     // instance variables - replace the example below with your own
-    private int x;
     public int maxHP;
     public int currentHP;
     /**
@@ -17,7 +18,6 @@ public class Interactable extends PhysicalObject
     public Interactable()
     {
         // initialise instance variables
-        x = 0;
     }
 
     /**
@@ -27,19 +27,6 @@ public class Interactable extends PhysicalObject
     {
         currentHP = 10;
         maxHP = 10;
-    }
-    
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-        
     }
     
     /**

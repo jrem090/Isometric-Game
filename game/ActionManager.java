@@ -7,7 +7,7 @@ import java.util.*;
  * and determining a proper response
  * 
  * @author (John Remmes) 
- * @version (V 1.0+)
+ * @version (0.1)
  */
 public class ActionManager
 {
@@ -32,6 +32,11 @@ public class ActionManager
         cursorState = 1;
     }
 
+    /**
+     * workhourse for ActionManager class. determines output depending on state and event.
+     * 
+     * @param e KeyEvent to be handled
+     */
     public void reaction(KeyEvent e)
     {
         KeyEvent event = e;
@@ -221,10 +226,11 @@ public class ActionManager
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * method to move cursor and object. currently not used. previously used in testing
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * @param  e KeyEvent to be handled
+     * @param thing Object to be used
+     * @return  returns true if the cursor was able to move correctly 
      */
     public boolean moveWithObject(KeyEvent e, PhysicalObject thing)
     {
@@ -289,10 +295,10 @@ public class ActionManager
     }
 
     /**
-     * An example of a method - replace this comment with your own
+      * method to move cursort. currently not used. previously used in testing
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * @param  e KeyEvent to be handled
+     * @return  returns true if the cursor was able to move correctly 
      */
     public boolean moveCursor(KeyEvent e)
     {
@@ -353,10 +359,10 @@ public class ActionManager
     }
 
     /**
-     * An example of a method - replace this comment with your own
+      * method to move cursor when in a move state.
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * @param  e KeyEvent to be handled
+     * @return  returns true if the cursor was able to move correctly 
      */
     public boolean moveCursorMove(KeyEvent e)
     {
@@ -450,10 +456,10 @@ public class ActionManager
     }
 
     /**
-     * An example of a method - replace this comment with your own
+      * method to move cursor when in an action state.
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * @param  e KeyEvent to be handled
+     * @return  returns true if the cursor was able to move correctly 
      */
     public boolean moveCursorAction(KeyEvent e)
     {
@@ -540,7 +546,15 @@ public class ActionManager
         toUse.cursor.set(newX,newY);
         return true;
     }
-
+    
+    /**
+     * recursive method to get range of movement and store in level
+     * 
+     * @param range range of moving character
+     * @param beginX X posistion to start at
+     * @param beginY Y posistion to start at
+     * @param p string of path to get to tile
+     */
     public void getMovement(int range, int beginX, int beginY, String p)
     {
         int x = beginX;
@@ -595,6 +609,15 @@ public class ActionManager
         }
     }
 
+    /**
+     * recursive method to get range of action and store in level
+     * does not handle  AOEs yet and attacks like a spear
+     * 
+     * @param range range of character's attack
+     * @param beginX X posistion to start at
+     * @param beginY Y posistion to start at
+     * @param p string of path to get to tile
+     */
     public void getActionRange(int range, int beginX, int beginY, String p)
     {
         int x = beginX;
@@ -634,6 +657,13 @@ public class ActionManager
         }
     }
 
+    /**
+     *  helper method that returns if a x,y posistion is in movement range
+     *  
+     *  @param x x-posistion to be used
+     *  @param y y-posistion to be used
+     *  @return boolean value of wheter the posistion is in range
+     */
     public boolean inMovement(int x, int y)
     {
         boolean contains = false;
@@ -645,6 +675,13 @@ public class ActionManager
         return contains;
     }
 
+    /**
+     *  helper method that returns if a x,y posistion is able to be moved through
+     *  
+     *  @param x x-posistion to be used
+     *  @param y y-posistion to be used
+     *  @return boolean value of wheter the posistion is in range
+     */
     public boolean inMoveThrough(int x, int y)
     {
         boolean contains = false;

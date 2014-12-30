@@ -1,14 +1,14 @@
 import java.util.*;
 /**
- * Write a description of class character here.
+ * This class is for a character on the level. 
  * 
  * @author (John Remmes) 
  * @version (a version number or a date)
  */
 public class Character extends Interactable implements Comparable<Character>
 {
-    // instance variables - replace the example below with your own
-    private int range;
+    // instance variables 
+    private int range; //movement
     public Item[] inventory;
     //public Action[] moveList = {new Action("Dance"),new Action("Attack"), new Action("Heal"), new Action ("Fireball")};
     public int speed;
@@ -17,8 +17,9 @@ public class Character extends Interactable implements Comparable<Character>
     public Job activeJob;
     public Job passiveJob;
     public ArrayList<Job> jobList = new ArrayList<Job>();
-    public Item[] lootList;
+    public Item[] lootList;//for enemies
     
+    //current stats at normal conditions
     public int strength;
     public int intelligence;
     public int dexterity;
@@ -26,6 +27,7 @@ public class Character extends Interactable implements Comparable<Character>
     public int charisma;
     public int magicResistance;
     
+    //Current values after status effect
     public int Tstrength;
     public int Tintelligence;
     public int Tdexterity;
@@ -77,6 +79,12 @@ public class Character extends Interactable implements Comparable<Character>
         //inventory[0]= new Item();
     }
     
+    /**
+     *  method used to determine order of characters based off of time for action  calendar
+     *  
+     *  @param other other Character to be compared
+     *  @return resluts of comparison. if + greater, if - less, if 0 equal
+     */
     @Override
     public int compareTo(Character other){
         // compareTo should return < 0 if this is supposed to be
@@ -87,7 +95,10 @@ public class Character extends Interactable implements Comparable<Character>
         int compare = a.compareTo(b);
         return compare;
     }
-
+    
+    /**
+     * Temporary method used to create a job to test some functions of character in game
+     */
     public ArrayList<Job> initializeJobs()
     {
         ArrayList<Job> toReturn = new ArrayList<Job>();
@@ -102,7 +113,9 @@ public class Character extends Interactable implements Comparable<Character>
         toReturn.add( new Job("Soldier",actionList, actionState, levelLim));
         return toReturn;
     }
-    
+    /**
+     * incomplete method that will be used to update characters status and time
+     */
     public void updateCharacter()
     {
         
@@ -110,15 +123,4 @@ public class Character extends Interactable implements Comparable<Character>
         
     }
     
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return range + y;
-    }
 }

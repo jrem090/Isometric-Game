@@ -79,37 +79,74 @@ public class Level
             }
         }
     }
-
+    /**
+     *  Helper method to get length of level
+     *  @return length of level
+     */
     public int getLength()
     {
         return grid.length;
     }
-
+    
+    /**
+     *  Helper method to get width of level
+     *  Most boards (at least those in test purposes have been n x n)
+     *  
+     *  @return width of level
+     */
     public int getWidth()
     {
         return grid[1].length;
     }
-
+    
+    /**
+     *  Helper method to get height of tile
+     *  @param x x-poisition of tile
+     *  @param y y-posistion of tile
+     *  @return length of level
+     */
     public int tileHeight(int x, int y)
     {
         return grid[x][y].height;
     }
-
+    
+    /**
+     *  Helper method to get Color of top of tile
+     *  @param x x-poisition of tile
+     *  @param y y-posistion of tile
+     *  @return Color of top
+     */
     public Color getTop(int x, int y)
     {
         return grid[x][y].top;
     }
 
+    /**
+     *  Helper method to get Color of base of tile
+     *  @param x x-poisition of tile
+     *  @param y y-posistion of tile
+     *  @return Color of base
+     */
     public Color getBase(int x, int y)
     {
         return grid[x][y].base;
     }
 
+    /**
+     *  Helper method to see if tile is occupied
+     *  @param x x-poisition of tile
+     *  @param y y-posistion of tile
+     *  @return true if tile is Occupied
+     */
     public boolean isOccupied(int x, int y)
     {
         return grid[x][y].isOccupied;
     }
 
+    /**
+     *  testing method used to create a grassland level
+     *  @param numChars number of characters to be added to level
+     */
     public void createGrassland(int numChars)
     {
         Random generator = new Random();
@@ -150,6 +187,13 @@ public class Level
         //objects.get(0).setGrid(4,6);
     }
     
+    /**
+     * This method places a character on a board
+     * @param i x-posistion
+     * @param j y-posistion
+     * @param charToAdd character to add to board
+     * @return returns true if character was succesfully added
+     */
     public boolean addCharacter(int i, int j, Character charToAdd)
     {
         if(grid[i][j].isOccupied)return false;
@@ -160,7 +204,11 @@ public class Level
         grid[i][j].object = charToAdd;
         return true;
     }
-
+    
+    /**
+     * method to handle Character/Interactable deaths
+     * @param character objectToDie
+     */
     public void dies(PhysicalObject character)
     {
         //remove from board
@@ -172,7 +220,13 @@ public class Level
          
         
     }
-
+    
+    /**
+     * method to handle an item or ability that revives a character (has not been used or tested yet)
+     * @param i x-posistion
+     * @param j y-posistion
+     * @param charToAdd character to revive
+     */
     public void revives(int i, int j, Character charToAdd)
     {
         deadList.remove(charToAdd);

@@ -2,14 +2,14 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
- * Write a description of class Tile here.
+ * Tile is a class that holds information for a specific tile in the level
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (John Remmes) 
+ * @version (0.1)
  */
 public class Tile
 {
-    // instance variables - replace the example below with your own
+    // instance variables -
     public int height;
     boolean isOccupied = false;
     Color top;
@@ -36,6 +36,4 @@ public class Tile
         top = top1;
         base = base1;
     }
-
-    
 }

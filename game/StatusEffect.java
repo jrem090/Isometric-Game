@@ -1,8 +1,9 @@
 
 /**
- * Write a description of class StatusEffect here.
+ * StatusEffect is a class that stores data of a status effect on a character (poison, slow, buffs, etc)
+ * Not fully built yet
  * 
- * @author (your name) 
+ * @author (John Remmes) 
  * @version (a version number or a date)
  */
 public class StatusEffect
@@ -21,15 +22,4 @@ public class StatusEffect
         
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return y;
-    }
 }

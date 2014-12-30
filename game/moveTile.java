@@ -3,10 +3,11 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 /**
- * Write a description of class moveTile here.
+ * Holds information regarding movement
+ * may want to consider making this an inner class
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (John Remmes) 
+ * @version (0.1)
  */
 public class moveTile
     {

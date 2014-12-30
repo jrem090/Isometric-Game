@@ -1,13 +1,13 @@
 import java.util.*;
 /**
- * Write a description of class Job here.
+ * This class holds data for a characers job/class
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (John Remmes) 
+ * @version (0.1)
  */
 public class Job
 {
-    // instance variables - replace the example below with your own
+    // instance variables
     public Action[] moveList = new Action[10];
     public int[] moveState = new int[10];
     public int[] levelLimits = new int[10];
@@ -27,18 +27,10 @@ public class Job
         moveState = move;
         levelLimits = levelLim;
     }
+    /**
+     * Empty Constructor for objects of class Job
+     */
     public Job()
     {}
     
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return y;
-    }
 }

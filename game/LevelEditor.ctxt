@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LevelEditor()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ LevelEditor\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ Main\ class\ for\ level\ editor\ \r\n
+comment2.params=toWrite\ inProgress
+comment2.target=void\ writeFile(Level,\ boolean)
+comment2.text=\r\n\ Writes\ a\ level\ to\ a\ file\r\n\ \r\n\ @param\ \ toWrite\ Level\ to\ be\ written\r\n\ @param\ inProgress\ to\ be\ used\ if\ code\ is\ reworked\ for\ savestate\ or\ level\ starts\ midbattle\r\n
+numComments=3

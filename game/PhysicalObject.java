@@ -1,15 +1,18 @@
 
 /** 
- * Base Class for objects 
+ * Base Class for objects
+ * provides framework for derived classes
+ * pure PhysicalObjects are not interactable although they do occupy space on the level
+ * i.e.trees,walls, etc
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (John Remmes) 
+ * @version (0.1)
  */
 public class PhysicalObject
 {
-    // instance variables - replace the example below with your own
-    private int i;
-    private int j;
+    // instance variables - 
+    private int i; //equivalent of x coordinate
+    private int j; //equivalent of y coordinate
     int team = -1;
 
     /**
@@ -22,10 +25,10 @@ public class PhysicalObject
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Helper method used to set values
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * @param  x   set i field
+     * @param  y   set j field
      */
     public void setGrid(int x, int y)
     {
@@ -33,16 +36,33 @@ public class PhysicalObject
         i=x;
         j=y;
     }
+    /**
+     * Helper method used to return X value
+     * 
+     * @return value of i
+     */
     public int getX()
     {
         return i;
     }
+    /**
+     * Helper method used to return Y value
+     * 
+     * @return value of j
+     */
     public int getY()
     {
         return j;
     }
+    /**
+     * method responsible for handling actions targeting this PhysicalObject
+     * 
+     * @param action Action to be done onto PhysicalObject
+     * @param actor Character that is doing action
+     */
     public void recieveAction(Action action, Character actor)
     {
+        //for pure PO treat as a background object and is not interactable
         System.out.println("I'm a tree you dolt");
     }
     public boolean isDead()

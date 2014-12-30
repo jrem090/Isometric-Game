@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Item here.
+ * This class represents an in-game item and the data needed for it
+ * notr implemented yet
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (John Remmes) 
+ * @version (0.0)
  */
 public class Item
 {
@@ -19,17 +20,5 @@ public class Item
     {
         // initialise instance variables
         amount = 1;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return amount + y;
     }
 }
